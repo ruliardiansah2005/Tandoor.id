@@ -15,7 +15,7 @@ import { Supplies } from "./pages/Supplies";
 import { SurveyService } from "./pages/SurveyService";
 import { Crowdfunding } from "./pages/Crowdfunding";
 import { CrowdfundingDetail } from "./pages/CrowdfundingDetail";
-import { CrowdfundingPortofolio } from "./pages/CrowdfundingPortofolio";
+import { CrowdfundingPortfolio } from "./pages/CrowdfundingPortofolio";
 
 export const router = createBrowserRouter([
   {
