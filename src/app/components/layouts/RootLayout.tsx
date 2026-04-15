@@ -11,7 +11,8 @@ import {
   X,
   Crown,
   LogOut,
-  Navigation
+  Navigation,
+  TrendingUp,
 } from "lucide-react";
 import { useState } from "react";
 import { useAuth } from "../../contexts/AuthContext";
@@ -33,6 +34,7 @@ export function RootLayout() {
     { path: "/stock-management", label: "Manajemen Stok", icon: Package },
     { path: "/marketplace", label: "Marketplace Hasil", icon: ShoppingCart },
     { path: "/supplies", label: "Toko Sarana", icon: Package },
+    { path: "/crowdfunding", label: "Crowdfunding", icon: TrendingUp },
     { path: "/profile", label: "Profil", icon: User },
   ];
 

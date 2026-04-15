@@ -13,6 +13,9 @@ import { AdvertiserLanding } from "./pages/AdvertiserLanding";
 import { AdvertiserDashboard } from "./pages/AdvertiserDashboard";
 import { Supplies } from "./pages/Supplies";
 import { SurveyService } from "./pages/SurveyService";
+import { Crowdfunding } from "./pages/Crowdfunding";
+import { CrowdfundingDetail } from "./pages/CrowdfundingDetail";
+import { CrowdfundingPortfolio } from "./pages/CrowdfundingPortofolio";
 
 export const router = createBrowserRouter([
   {
@@ -32,6 +35,9 @@ export const router = createBrowserRouter([
       { path: "profile", Component: Profile },
       { path: "advertiser", Component: AdvertiserLanding },
       { path: "advertiser-dashboard", Component: AdvertiserDashboard },
+      { path: "crowdfunding", Component: Crowdfunding },
+      { path: "crowdfunding/:id", Component: CrowdfundingDetail },
+      { path: "crowdfunding/portfolio", Component: CrowdfundingPortfolio },
     ],
   },
 ]);

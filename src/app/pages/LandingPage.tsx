@@ -131,7 +131,114 @@ export function LandingPage() {
           </div>
         </div>
       </section>
-
+      {/* Crowdfunding CTA Banner */}
+      <section className="py-16 bg-gradient-to-br from-green-600 via-emerald-600 to-green-700 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-10 left-10 w-72 h-72 bg-white rounded-full blur-3xl"></div>
+          <div className="absolute bottom-10 right-10 w-96 h-96 bg-orange-400 rounded-full blur-3xl"></div>
+        </div>
+        
+        <div className="container mx-auto px-4 relative">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="text-white">
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-sm mb-6">
+                <TrendingUp className="w-4 h-4" />
+                <span>Investasi Pertanian Produktif</span>
+              </div>
+              
+              <h2 className="text-4xl lg:text-5xl font-bold mb-4">
+                🌾 Crowdfunding Pertanian
+              </h2>
+              <p className="text-xl text-green-50 mb-6 leading-relaxed">
+                Investasi langsung ke proyek pertanian produktif. Dukung petani Indonesia, raih ROI hingga 45%!
+              </p>
+              
+              <div className="grid grid-cols-3 gap-4 mb-8">
+                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+                  <p className="text-3xl font-bold">42</p>
+                  <p className="text-sm text-green-50">Proyek Aktif</p>
+                </div>
+                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+                  <p className="text-3xl font-bold">26%</p>
+                  <p className="text-sm text-green-50">Avg ROI</p>
+                </div>
+                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+                  <p className="text-3xl font-bold">1.2K</p>
+                  <p className="text-sm text-green-50">Investor</p>
+                </div>
+              </div>
+              
+              <div className="flex gap-4">
+                <Link
+                  to="/crowdfunding"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-white text-green-700 rounded-lg hover:shadow-lg transition-all font-semibold"
+                >
+                  Jelajahi Proyek
+                  <ArrowRight className="w-5 h-5" />
+                </Link>
+                <Link
+                  to="/crowdfunding/portfolio"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 backdrop-blur-sm border-2 border-white text-white rounded-lg hover:bg-white/20 transition-all font-semibold"
+                >
+                  <BarChart3 className="w-5 h-5" />
+                  Lihat Portofolio
+                </Link>
+              </div>
+            </div>
+            
+            <div className="grid grid-cols-2 gap-4">
+              <div className="bg-white rounded-xl p-5 shadow-xl">
+                <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-3">
+                  <Leaf className="w-6 h-6 text-green-600" />
+                </div>
+                <h4 className="font-semibold text-slate-900 mb-2">Sayuran Organik</h4>
+                <p className="text-sm text-slate-600 mb-3">Cabai, tomat, sawi premium</p>
+                <div className="flex items-center justify-between">
+                  <span className="text-xs text-slate-500">ROI</span>
+                  <span className="font-bold text-green-600">20-30%</span>
+                </div>
+              </div>
+              
+              <div className="bg-white rounded-xl p-5 shadow-xl">
+                <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-3">
+                  <Leaf className="w-6 h-6 text-orange-600" />
+                </div>
+                <h4 className="font-semibold text-slate-900 mb-2">Buah Premium</h4>
+                <p className="text-sm text-slate-600 mb-3">Durian, strawberry, alpukat</p>
+                <div className="flex items-center justify-between">
+                  <span className="text-xs text-slate-500">ROI</span>
+                  <span className="font-bold text-orange-600">35-45%</span>
+                </div>
+              </div>
+              
+              <div className="bg-white rounded-xl p-5 shadow-xl">
+                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-3">
+                  <Leaf className="w-6 h-6 text-blue-600" />
+                </div>
+                <h4 className="font-semibold text-slate-900 mb-2">Padi & Jagung</h4>
+                <p className="text-sm text-slate-600 mb-3">Organik bersertifikat SNI</p>
+                <div className="flex items-center justify-between">
+                  <span className="text-xs text-slate-500">ROI</span>
+                  <span className="font-bold text-blue-600">15-22%</span>
+                </div>
+              </div>
+              
+              <div className="bg-white rounded-xl p-5 shadow-xl">
+                <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-3">
+                  <Leaf className="w-6 h-6 text-purple-600" />
+                </div>
+                <h4 className="font-semibold text-slate-900 mb-2">Perikanan</h4>
+                <p className="text-sm text-slate-600 mb-3">Lele, nila, udang vaname</p>
+                <div className="flex items-center justify-between">
+                  <span className="text-xs text-slate-500">ROI</span>
+                  <span className="font-bold text-purple-600">25-35%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
       {/* Features Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
